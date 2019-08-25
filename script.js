@@ -1,5 +1,6 @@
 window.onload = () => {
     function swipeFunc() {
+        getLeft = Number(photos.style.left.match(/\d+/ig)[0]);
         switch (getLeft) {
             case 1000: onePick.checked = true; break;
             case 0: twoPick.checked = true; break;
